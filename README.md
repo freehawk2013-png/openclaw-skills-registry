@@ -166,13 +166,24 @@ npx skills add 6551team/opentwitter-mcp
 npx skills add 6551team/opennews-mcp
 ```
 
-### 获取 API Token
-1. 访问 https://6551.io/mcp
-2. 注册账号
-3. 创建 Token
-4. 配置到 OpenClaw
+### 配置 API Token
 
-### 安全提示
+**Token 已配置** ✅ (2026-03-07)
+
+环境变量已写入 `~/.zshrc`：
+```bash
+export TWITTER_TOKEN="eyJhbGci..."
+export OPENNEWS_TOKEN="eyJhbGci..."
+```
+
+**获取新 Token**（如需更换）：
+1. 访问 https://6551.io/mcp
+2. 连接钱包登录
+3. 创建新 Token
+4. 更新 `~/.zshrc` 中的环境变量
+5. 重启 OpenClaw Gateway
+
+### 验证安装
 - ✅ Twitter/X 数据查询 - 可直接使用
 - ✅ 新闻搜索分析 - 可直接使用  
 - ⚠️ AI 交易信号 - **涉及交易建议，必须人工确认**
