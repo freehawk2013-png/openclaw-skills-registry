@@ -113,8 +113,17 @@
 - `restore.sh` - 回滚恢复
 - `history.sh` - 查看历史
 
-### 安全策略
-- `SECURITY.md` - bb-browser 使用规则
+### 安全策略（慢雾安全指南 v2.7）
+- [AGENTS.md](./docs/AGENTS.md) - Agent 行为规范（红线/黄线命令）
+- [SECURITY.md](./docs/SECURITY.md) - 完整安全策略（文件保护/巡检/灾备）
+- `scripts/nightly-security-audit.sh` - 每晚自动巡检脚本
+
+**已实施的安全措施：**
+- ✅ 核心文件权限收窄 (chmod 600)
+- ✅ 配置文件哈希基线
+- ✅ 红线/黄线行为规范写入 AGENTS.md
+- ✅ 自动巡检脚本（覆盖11项核心指标）
+- ✅ Git 增量灾备备份
 
 ---
 
