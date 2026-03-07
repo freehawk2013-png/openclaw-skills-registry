@@ -149,3 +149,30 @@
 ---
 
 *由 OpenClaw 自动生成*
+---
+
+## 📰 6551 数据服务 (2个)
+
+[来源](https://x.com/cryptoxiao/status/2026956308092453360) - Cryptoxiao 开源项目
+
+| 技能 | 功能 | 风险 | 配置 |
+|------|------|------|------|
+| **opentwitter** | Twitter/X 数据（用户资料、推文搜索、关注者等） | 🟡 Med Risk | 需 6551 API Token |
+| **opennews** | 加密新闻搜索、AI评级、交易信号、实时更新 | 🟡 Med Risk | 需 6551 API Token |
+
+### 安装命令
+```bash
+npx skills add 6551team/opentwitter-mcp
+npx skills add 6551team/opennews-mcp
+```
+
+### 获取 API Token
+1. 访问 https://6551.io/mcp
+2. 注册账号
+3. 创建 Token
+4. 配置到 OpenClaw
+
+### 安全提示
+- ✅ Twitter/X 数据查询 - 可直接使用
+- ✅ 新闻搜索分析 - 可直接使用  
+- ⚠️ AI 交易信号 - **涉及交易建议，必须人工确认**
